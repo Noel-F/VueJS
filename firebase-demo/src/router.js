@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import firebase from 'firebase'
 import Login from './components/Login.vue'
 import Register from './components/Register.vue'
-import HelloWorld from './components/HelloWorld.vue'
+import Home from './components/Home.vue'
 
 Vue.use(Router)
 
@@ -28,9 +28,9 @@ let router = new Router({
       component: Register
     },
     {
-      path: '/HelloWorld',
-      name: 'HelloWorld',
-      component: HelloWorld,
+      path: '/Home',
+      name: 'Home',
+      component: Home,
       meta: {
         requiresAuth: true
       }

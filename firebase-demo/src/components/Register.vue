@@ -42,7 +42,7 @@
                 this.loading = true
                 firebase.auth().createUserWithEmailAndPassword(this.user.email, this.user.password).then(
                     (user) => {
-                        this.$router.replace('HelloWorld')
+                        this.$router.replace('Home')
                         this.loading = false
                     }, (err) => {
                         this.loading = false
